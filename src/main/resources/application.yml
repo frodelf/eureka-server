@@ -1,0 +1,17 @@
+server:
+  port: 47073
+spring:
+  application:
+    name: eserver
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:7071/eureka
+logging:
+  level:
+    com:
+      netflix:
+        eureka: off
+        discovery: off

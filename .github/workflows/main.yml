@@ -43,7 +43,7 @@ jobs:
         with:
           host: ${{ secrets.remote_server_host }}
           username: ${{ secrets.remote_server_username }}
-          password: aerhtl
+          password: ${{ secrets.remote_server_ssh_key }}
           script: |
             if docker ps -a --format '{{.Names}}' | grep -q '^slj_househub_eureka_server_dd'; then
               docker stop slj_househub_eureka_server_dd || true

@@ -18,7 +18,7 @@ jobs:
       - name: Build app
         run: |
           gradle clean
-          gradle package --file building.gradle
+          gradle build --file building.gradle
       - name: Build Docker
         uses: docker/build-push-action@v2
         with:

@@ -17,10 +17,10 @@ jobs:
           java-version: '17'
       - name: Build app
         run: |
-          gradle  clean
-          gradle  -B package --file pom.xml
+          gradle clean
+          gradle -B package --file building.gradle
       - name: Build with Maven
-        run: gradle -B test --file pom.xml
+        run: gradle -B test --file building.gradle
       - name: Build Docker
         uses: docker/build-push-action@v2
         with:

@@ -8,7 +8,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://slj.avada-media-dev2.od.ua:7071/eureka
+      defaultZone: http://slj.demodev.cc:7071/eureka
 logging:
   level:
     com:
